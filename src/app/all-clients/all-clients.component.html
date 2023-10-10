@@ -16,21 +16,241 @@
       <div class="card-body">
         <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
           <li [ngbNavItem]="1">
-            <a ngbNavLink>Tab One</a>
+            <a ngbNavLink>Starred</a>
             <ng-template ngbNavContent>
-              <p>{{ content1 }}</p>
+              <div class="row">
+                <div class="col-xl-3 col-lg-6">
+                  <div class="card">
+                    <div class="card-body card-type-3">
+                      <div class="row">
+                        <div class="col">
+                          <h6 class="text-muted mb-0">Orders</h6>
+                          <span class="fw-bold mb-0">450</span>
+                        </div>
+                        <div class="col-auto">
+                          <div class="card-circle l-bg-orange text-white">
+                            <i class="fas fa-book-open"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="mt-3 mb-0 text-muted text-sm">
+                        <span class="text-success msr-2"
+                          ><i class="fa fa-arrow-up"></i> 10%</span
+                        ><span class="text-nowrap">Since last month</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-6">
+                  <div class="card">
+                    <div class="card-body card-type-3">
+                      <div class="row">
+                        <div class="col">
+                          <h6 class="text-muted mb-0">New Booking</h6>
+                          <span class="fw-bold mb-0">1,562</span>
+                        </div>
+                        <div class="col-auto">
+                          <div class="card-circle l-bg-cyan text-white">
+                            <i class="fas fa-briefcase"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="mt-3 mb-0 text-muted text-sm">
+                        <span class="text-success msr-2"
+                          ><i class="fa fa-arrow-up"></i> 7.8%</span
+                        ><span class="text-nowrap">Since last month</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-6">
+                  <div class="card">
+                    <div class="card-body card-type-3">
+                      <div class="row">
+                        <div class="col">
+                          <h6 class="text-muted mb-0">Inquiry</h6>
+                          <span class="fw-bold mb-0">7,897</span>
+                        </div>
+                        <div class="col-auto">
+                          <div class="card-circle l-bg-green text-white">
+                            <i class="fas fa-phone"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="mt-3 mb-0 text-muted text-sm">
+                        <span class="text-success msr-2"
+                          ><i class="fa fa-arrow-up"></i> 15%</span
+                        ><span class="text-nowrap">Since last month</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-6">
+                  <div class="card">
+                    <div class="card-body card-type-3">
+                      <div class="row">
+                        <div class="col">
+                          <h6 class="text-muted mb-0">Earning</h6>
+                          <span class="fw-bold mb-0">$8,965</span>
+                        </div>
+                        <div class="col-auto">
+                          <div class="card-circle l-bg-purple text-white">
+                            <i class="fas fa-dollar-sign"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="mt-3 mb-0 text-muted text-sm">
+                        <span class="text-success msr-2"
+                          ><i class="fa fa-arrow-up"></i> 5.4%</span
+                        ><span class="text-nowrap">Since last month</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </ng-template>
           </li>
           <li [ngbNavItem]="2">
-            <a ngbNavLink>Tab Two</a>
+            <a ngbNavLink>All</a>
             <ng-template ngbNavContent>
-              <p>{{ content2 }}</p>
-            </ng-template>
-          </li>
-          <li [ngbNavItem]="3">
-            <a ngbNavLink>Tab Three</a>
-            <ng-template ngbNavContent>
-              <p>{{ content3 }}</p>
+              <div class="row">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <div class="card">
+                    <div class="card-statistic-4">
+                      <div class="align-items-center justify-content-between">
+                        <div class="row">
+                          <div
+                            class="col-lg-8 col-md-8 col-sm-8 col-xs-8 left-grid-spacing"
+                          >
+                            <div class="card-content">
+                              <h5 class="font-20">New Booking</h5>
+                              <h2 class="mb-3 font-18">258</h2>
+                              <p class="mb-0">
+                                <span class="col-green">42%</span>
+                              </p>
+                            </div>
+                            <ngb-progressbar
+                              type="success"
+                              [value]="42"
+                              height=".3rem"
+                            ></ngb-progressbar>
+                          </div>
+                          <div
+                            class="col-lg-4 col-md-4 col-sm-4 col-xs-4 right-grid-spacing"
+                          >
+                            <div class="icon-alignment">
+                              <i class="far fa-star"></i>
+                            </div>
+
+                            <!-- <div class="banner-img">
+                              <img src="assets/images/banner/1.png" alt="" />
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <div class="card">
+                    <div class="card-statistic-4">
+                      <div class="align-items-center justify-content-between">
+                        <div class="row">
+                          <div
+                            class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-grid-spacing"
+                          >
+                            <div class="card-content">
+                              <h5 class="font-20">Customers</h5>
+                              <h2 class="mb-3 font-18">1,287</h2>
+                              <p class="mb-0">
+                                <span class="col-orange">33%</span>
+                              </p>
+                            </div>
+                            <ngb-progressbar
+                              type="warning"
+                              [value]="33"
+                              height=".3rem"
+                            ></ngb-progressbar>
+                          </div>
+                          <div
+                            class="col-lg-6 col-md-6 col-sm-6 col-xs-6 right-grid-spacing"
+                          >
+                            <div class="banner-img">
+                              <img src="assets/images/banner/2.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <div class="card">
+                    <div class="card-statistic-4">
+                      <div class="align-items-center justify-content-between">
+                        <div class="row">
+                          <div
+                            class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-grid-spacing"
+                          >
+                            <div class="card-content">
+                              <h5 class="font-20">New Project</h5>
+                              <h2 class="mb-3 font-18">128</h2>
+                              <p class="mb-0">
+                                <span class="col-blue">25%</span>
+                              </p>
+                            </div>
+                            <ngb-progressbar
+                              type="info"
+                              [value]="25"
+                              height=".3rem"
+                            ></ngb-progressbar>
+                          </div>
+                          <div
+                            class="col-lg-6 col-md-6 col-sm-6 col-xs-6 right-grid-spacing"
+                          >
+                            <div class="banner-img">
+                              <img src="assets/images/banner/3.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <div class="card">
+                    <div class="card-statistic-4">
+                      <div class="align-items-center justify-content-between">
+                        <div class="row">
+                          <div
+                            class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-grid-spacing"
+                          >
+                            <div class="card-content">
+                              <h5 class="font-20">Revenue</h5>
+                              <h2 class="mb-3 font-18">$48,697</h2>
+                              <p class="mb-0">
+                                <span class="col-red">65%</span>
+                              </p>
+                            </div>
+                            <ngb-progressbar
+                              type="danger"
+                              [value]="65"
+                              height=".3rem"
+                            ></ngb-progressbar>
+                          </div>
+                          <div
+                            class="col-lg-6 col-md-6 col-sm-6 col-xs-6 right-grid-spacing"
+                          >
+                            <div class="banner-img">
+                              <img src="assets/images/banner/4.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </ng-template>
           </li>
         </ul>

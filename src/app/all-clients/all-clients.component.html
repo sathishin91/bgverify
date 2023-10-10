@@ -1,0 +1,42 @@
+<section class="main-content">
+  <ul class="breadcrumb breadcrumb-style">
+    <li class="breadcrumb-item">
+      <h5 class="page-title m-b-0">All Clients</h5>
+    </li>
+    <li class="breadcrumb-item bcrumb-1">
+      <a routerLink="/dashboard/main"> <i class="fas fa-home font-17"></i></a>
+    </li>
+    <li class="breadcrumb-item">All Clients</li>
+  </ul>
+  <div class="section-body">
+    <div class="card">
+      <div class="card-header">
+        <h4>Simple Tabs</h4>
+      </div>
+      <div class="card-body">
+        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+          <li [ngbNavItem]="1">
+            <a ngbNavLink>Tab One</a>
+            <ng-template ngbNavContent>
+              <p>{{ content1 }}</p>
+            </ng-template>
+          </li>
+          <li [ngbNavItem]="2">
+            <a ngbNavLink>Tab Two</a>
+            <ng-template ngbNavContent>
+              <p>{{ content2 }}</p>
+            </ng-template>
+          </li>
+          <li [ngbNavItem]="3">
+            <a ngbNavLink>Tab Three</a>
+            <ng-template ngbNavContent>
+              <p>{{ content3 }}</p>
+            </ng-template>
+          </li>
+        </ul>
+
+        <div [ngbNavOutlet]="nav" class="mt-2"></div>
+      </div>
+    </div>
+  </div>
+</section>

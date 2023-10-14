@@ -25,4 +25,8 @@ export class AllClientsComponent {
       this.active3 = 1;
     }
   }
+
+  star() {
+    console.log('Make the client star');
+  }
 }

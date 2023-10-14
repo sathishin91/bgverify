@@ -9,18 +9,30 @@ import { ClientDashboardComponent } from './client-dashboard/client-dashboard.co
 
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { NgxEchartsModule } from 'ngx-echarts';
+import { AllEmployeeComponent } from './employee/all-employee/all-employee.component';
+import { AddEmployeeComponent } from './employee/add-employee/add-employee.component';
+import { FormsModule as formModule, ReactiveFormsModule } from '@angular/forms';
+
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
     AllClientsComponent,
     ClientComponent,
     ClientDashboardComponent,
+    AllEmployeeComponent,
+    AddEmployeeComponent,
   ],
   imports: [
     CommonModule,
     NgbModule,
     NgApexchartsModule,
+    ReactiveFormsModule,
     AllClientsRoutingModule,
+    formModule,
+    NgxDatatableModule,
+    ToastrModule.forRoot(),
     NgxEchartsModule.forRoot({
       echarts: () => import('echarts'),
     }),

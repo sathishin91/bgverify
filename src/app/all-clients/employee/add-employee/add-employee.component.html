@@ -1,0 +1,225 @@
+<section class="main-content">
+  <ul class="breadcrumb breadcrumb-style">
+    <li class="breadcrumb-item">
+      <h5 class="page-title m-b-0">Client Name</h5>
+    </li>
+    <li class="breadcrumb-item bcrumb-1">
+      <a routerLink="/dashboard/main"> <i class="fas fa-home font-17"></i></a>
+    </li>
+    <li class="breadcrumb-item">Employee</li>
+    <li class="breadcrumb-item">Add Employee</li>
+  </ul>
+  <div class="section-body">
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-12">
+        <div class="card">
+          <div class="card-header">
+            <h4>Add Employee</h4>
+          </div>
+          <div class="card-body">
+            <form
+              class="add_employee-form m-4"
+              [formGroup]="add_employee"
+              (ngSubmit)="onadd_employee()"
+            >
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label>First name <span class="text-danger">*</span></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="First name"
+                    formControlName="first"
+                    required
+                  />
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="
+                      !add_employee.get('first')?.valid &&
+                      add_employee.get('first')?.touched
+                    "
+                    >Please enter a first name!</small
+                  >
+                </div>
+                <div class="form-group col-md-6">
+                  <label>Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Last Name"
+                    formControlName="last"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label>Mobile<span class="text-danger">*</span></label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Mobile"
+                    formControlName="mobile"
+                    required
+                  />
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="
+                      !add_employee.get('mobile')?.valid &&
+                      add_employee.get('mobile')?.touched
+                    "
+                    >Please enter a Mobile number!</small
+                  >
+                </div>
+                <div class="form-group col-md-6">
+                  <label>Email<span class="text-danger">*</span></label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                    formControlName="email"
+                    required
+                  />
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="
+                      !add_employee.get('email')?.valid &&
+                      (add_employee.get('email')?.dirty ||
+                        add_employee.get('email')?.touched)
+                    "
+                  >
+                    Enter valid email address!</small
+                  >
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label>DOB</label
+                  ><input
+                    type="date"
+                    class="form-control"
+                    placeholder="DOB"
+                    formControlName="dob"
+                    required
+                  />
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="
+                      !add_employee.get('dob')?.valid &&
+                      add_employee.get('dob')?.touched
+                    "
+                    >Please enter a dob
+                  </small>
+                </div>
+                <div class="form-group col-md-6">
+                  <label>Joining Date</label
+                  ><input
+                    type="date"
+                    class="form-control"
+                    formControlName="joining_date"
+                    required
+                  />
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="
+                      !add_employee.get('joining_date')?.valid &&
+                      add_employee.get('joining_date')?.touched
+                    "
+                    >Please enter the joining date</small
+                  >
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label>PAN</label
+                  ><input
+                    type="text"
+                    class="form-control"
+                    placeholder="PAN"
+                    formControlName="pan"
+                    required
+                  />
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="
+                      !add_employee.get('pan')?.valid &&
+                      add_employee.get('pan')?.touched
+                    "
+                    >Please enter the PAN card number
+                  </small>
+                </div>
+                <div class="form-group col-md-6">
+                  <label>AAdhar</label
+                  ><input
+                    type="number"
+                    class="form-control"
+                    formControlName="aadhar"
+                    required
+                  />
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="
+                      !add_employee.get('aadhar')?.valid &&
+                      add_employee.get('aadhar')?.touched
+                    "
+                    >Please enter the Aadhaar card number</small
+                  >
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label>Voter ID</label
+                  ><input
+                    type="number"
+                    class="form-control"
+                    placeholder="DOB"
+                    formControlName="voter_id"
+                    required
+                  />
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="
+                      !add_employee.get('voter_id')?.valid &&
+                      add_employee.get('voter_id')?.touched
+                    "
+                    >Please enter a Voter ID
+                  </small>
+                </div>
+                <div class="form-group col-md-6">
+                  <label> License</label
+                  ><input
+                    type="number"
+                    class="form-control"
+                    formControlName="license"
+                    required
+                  />
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="
+                      !add_employee.get('license')?.valid &&
+                      add_employee.get('license')?.touched
+                    "
+                    >Please enter the License number</small
+                  >
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+                  <button
+                    class="btn btn-primary msr-3"
+                    [disabled]="!add_employee.valid"
+                  >
+                    Submit
+                  </button>
+                  <button class="btn btn-danger" (click)="clearInput()">
+                    Clear
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

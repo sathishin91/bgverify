@@ -2,3 +2,12 @@
   font-size: 2em !important;
   content: "\f164";
 }
+
+.icon-container .preview {
+  display: flex;
+  background: white;
+  padding: 12px;
+  border-radius: 5px;
+  margin: 5px;
+  border: 1px solid #c1bbbb;
+}

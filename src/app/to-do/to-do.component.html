@@ -1,33 +1,106 @@
 <section class="main-content">
   <ul class="breadcrumb breadcrumb-style">
     <li class="breadcrumb-item">
-      <h5 class="page-title m-b-0">All Clients</h5>
+      <h5 class="page-title m-b-0">To Do</h5>
     </li>
     <li class="breadcrumb-item bcrumb-1">
       <a routerLink="/dashboard/main"> <i class="fas fa-home font-17"></i></a>
     </li>
-    <li class="breadcrumb-item">All Clients</li>
   </ul>
   <div class="section-body">
-    <div class="row clearfix">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="card">
-          <div class="p-10">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="row m-0">
-                  <div class="col-auto p-0">
-                    <div class="ngxTableHeader">
-                      <div class="table-title">
-                        <h2><strong>Clients</strong></h2>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-8 p-0">
-                    <div class="ngxTableHeader">Table</div>
-                  </div>
-                </div>
+    <div class="row">
+      <div class="col-xl-3 col-lg-6">
+        <div class="card l-bg-green">
+          <div class="card-statistic-3" routerLink="todo-detail">
+            <div class="card-icon card-icon-large">
+              <i class="fa fa-award"></i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">New Orders</h4>
+              <span class="font-20">524</span>
+              <div class="mt-2">
+                <ngb-progressbar
+                  type="primary"
+                  [value]="51"
+                  height=".5rem"
+                ></ngb-progressbar>
               </div>
+              <p class="mb-0 text-sm">
+                <span class="msr-2"><i class="fa fa-arrow-up"></i> 10%</span>
+                <span class="text-nowrap">Since last month</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6">
+        <div class="card l-bg-cyan">
+          <div class="card-statistic-3" routerLink="todo-detail">
+            <div class="card-icon card-icon-large">
+              <i class="fa fa-briefcase"></i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">New Booking</h4>
+              <span class="font-20">1,258</span>
+              <div class="mt-2">
+                <ngb-progressbar
+                  type="orange"
+                  [value]="51"
+                  height=".5rem"
+                ></ngb-progressbar>
+              </div>
+              <p class="mb-0 text-sm">
+                <span class="msr-2"><i class="fa fa-arrow-up"></i> 10%</span>
+                <span class="text-nowrap">Since last month</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6">
+        <div class="card l-bg-purple">
+          <div class="card-statistic-3">
+            <div class="card-icon card-icon-large">
+              <i class="fa fa-globe"></i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Inquiry</h4>
+              <span class="font-20">10,225</span>
+              <div class="mt-2">
+                <ngb-progressbar
+                  type="danger"
+                  [value]="51"
+                  height=".5rem"
+                ></ngb-progressbar>
+              </div>
+              <p class="mb-0 text-sm">
+                <span class="msr-2"><i class="fa fa-arrow-up"></i> 10%</span>
+                <span class="text-nowrap">Since last month</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6">
+        <div class="card l-bg-orange">
+          <div class="card-statistic-3">
+            <div class="card-icon card-icon-large">
+              <i class="fa fa-money-bill-alt"></i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Earning</h4>
+              <span class="font-20">$2,658</span>
+              <div class="mt-2">
+                <ngb-progressbar
+                  type="success"
+                  [value]="51"
+                  height=".5rem"
+                ></ngb-progressbar>
+              </div>
+              <p class="mb-0 text-sm">
+                <span class="msr-2"><i class="fa fa-arrow-up"></i> 10%</span>
+                <span class="text-nowrap">Since last month</span>
+              </p>
             </div>
           </div>
         </div>

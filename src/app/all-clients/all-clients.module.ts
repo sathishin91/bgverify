@@ -15,6 +15,7 @@ import { FormsModule as formModule, ReactiveFormsModule } from '@angular/forms';
 
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { ToastrModule } from 'ngx-toastr';
+import { ConfigureComponent } from './configure/configure.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ToastrModule } from 'ngx-toastr';
     ClientDashboardComponent,
     AllEmployeeComponent,
     AddEmployeeComponent,
+    ConfigureComponent,
   ],
   imports: [
     CommonModule,

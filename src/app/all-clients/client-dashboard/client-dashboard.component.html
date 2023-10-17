@@ -1,7 +1,9 @@
 <section class="main-content">
   <ul class="breadcrumb breadcrumb-style">
     <li class="breadcrumb-item">
-      <h5 class="page-title m-b-0">All Clients</h5>
+      <h5 class="page-title m-b-0">
+        <a routerLink="/all-clients/client">Client Name</a>
+      </h5>
     </li>
     <li class="breadcrumb-item bcrumb-1">
       <a routerLink="/dashboard/main"> <i class="fas fa-home font-17"></i></a>
@@ -13,9 +15,6 @@
     <div class="row">
       <div class="col-12 col-md-9 col-lg-9">
         <div class="card">
-          <div class="card-header">
-            <h4>Graph Line Chart</h4>
-          </div>
           <div class="card-body">
             <div
               echarts
@@ -27,10 +26,155 @@
       </div>
       <div class="col-12 col-md-3 col-lg-3">
         <div class="card">
-          <div class="card-header">
-            <h4>Graph Line Chart</h4>
+          <div class="card-body">
+            <p>Filter By</p>
+            <form>
+              <div class="form-group">
+                <label class="d-block">Gender</label>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    id="inlineCheckbox1"
+                    value="male"
+                    class="form-check-input"
+                  /><label for="inlineCheckbox1" class="form-check-label"
+                    >Male</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    id="inlineCheckbox2"
+                    value="female"
+                    class="form-check-input"
+                  /><label for="inlineCheckbox2" class="form-check-label"
+                    >Female</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    id="inlineCheckbox3"
+                    value="other"
+                    class="form-check-input"
+                  /><label for="inlineCheckbox3" class="form-check-label"
+                    >Other
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="d-block">Entity Type</label>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    id="employeeCheckbox1"
+                    value="employee"
+                    class="form-check-input"
+                  /><label for="employeeCheckbox1" class="form-check-label"
+                    >Employee</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    id="tenentCheckbox2"
+                    value="tenant"
+                    class="form-check-input"
+                  /><label for="tenentCheckbox2" class="form-check-label"
+                    >Tenant</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    id="business"
+                    value="other"
+                    class="form-check-input"
+                  /><label for="business" class="form-check-label"
+                    >Business Associate
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="d-block">Current profile status</label>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    id="DraftCheckbox"
+                    value="Draft"
+                    class="form-check-input"
+                  /><label for="DraftCheckbox" class="form-check-label"
+                    >Draft</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    id="activeCheckbox"
+                    value="active"
+                    class="form-check-input"
+                  /><label for="activeCheckbox" class="form-check-label"
+                    >Active</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    id="inactives"
+                    value="other"
+                    disabled=""
+                    class="form-check-input"
+                  /><label for="inactives" class="form-check-label"
+                    >Inactive(Terminated)
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="d-block">Current profile status</label>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    id="fulltimeCheckbox"
+                    value="fulltime"
+                    class="form-check-input"
+                  /><label for="fulltimeCheckbox" class="form-check-label"
+                    >Full time</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    id="parttimeCheckbox"
+                    value="parttime"
+                    class="form-check-input"
+                  /><label for="parttimeCheckbox" class="form-check-label"
+                    >Part time</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    id="contractorCheckbox"
+                    value="contractor"
+                    class="form-check-input"
+                  /><label for="contractorCheckbox" class="form-check-label"
+                    >Contractor
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Select <code>.form-control-lg</code></label
+                ><select
+                  class="form-select form-control form-control-lg"
+                  fdprocessedid="sqkqt"
+                >
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                </select>
+              </div>
+            </form>
           </div>
-          <div class="card-body">Filter</div>
         </div>
       </div>
     </div>

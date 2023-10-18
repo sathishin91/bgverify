@@ -6,6 +6,7 @@ import { ClientDashboardComponent } from './client-dashboard/client-dashboard.co
 import { AllEmployeeComponent } from './employee/all-employee/all-employee.component';
 import { AddEmployeeComponent } from './employee/add-employee/add-employee.component';
 import { ConfigureComponent } from './configure/configure.component';
+import { VerifyComponent } from './verify-services/verify/verify.component';
 
 const routes: Routes = [
   { path: '', component: AllClientsComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'client/all-employee', component: AllEmployeeComponent },
   { path: 'client/add-employee', component: AddEmployeeComponent },
   { path: 'client/configure', component: ConfigureComponent },
+  { path: 'client/verify', component: VerifyComponent },
 ];
 
 @NgModule({

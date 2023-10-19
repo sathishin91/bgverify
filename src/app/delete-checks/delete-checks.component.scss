@@ -1,0 +1,30 @@
+.form-inline .btn {
+  background-color: #f2f2f2;
+}
+.form-inline .search-element .form-control {
+  border-radius: 5px 0 0 5px;
+}
+.form-inline .form-control {
+  background-color: #fff;
+  border-color: #f3f3f3;
+  padding-left: 20px;
+  padding-right: 0;
+  margin-right: -6px;
+  min-height: 46px;
+  font-weight: 500;
+  border-radius: 3px 0 0 3px;
+  transition: all 1s;
+}
+
+.form-inline .btn {
+  background-color: #f2f2f2;
+}
+.form-inline .search-element .btn {
+  border-radius: 0 5px 5px 0;
+}
+.form-inline .btn {
+  border-radius: 0 3px 3px 0;
+  background-color: #fff;
+  padding: 9px 15px;
+  border-color: transparent;
+}

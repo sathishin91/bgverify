@@ -1,14 +1,56 @@
 <section class="main-content">
   <ul class="breadcrumb breadcrumb-style">
     <li class="breadcrumb-item">
-      <h5 class="page-title m-b-0">Dashboard</h5>
+      <h5 class="page-title m-b-0">To Do</h5>
     </li>
     <li class="breadcrumb-item bcrumb-1">
       <a routerLink="/dashboard/main"> <i class="fas fa-home font-17"></i></a>
     </li>
-    <li class="breadcrumb-item">Dashboard 2</li>
+    <li class="breadcrumb-item">Detailed view</li>
   </ul>
   <div class="section-body">
+    <div class="row mb-3">
+      <div class="col-md-4">
+        <form>
+          <div class="form-group">
+            <label>Search</label>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label=""
+              />
+              <div class="input-group-append">
+                <button class="btn btn-primary btn-lg" type="button">
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Select</label>
+          <select class="form-select form-control">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Select</label>
+          <select class="form-select form-control">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+      </div>
+    </div>
     <div class="row">
       <div class="col-12 col-md-6 col-lg-6">
         <div class="card">
@@ -68,7 +110,10 @@
                     <div class="badge badge-success">Active</div>
                   </td>
                   <td>
-                    <a href="#" onClick="return false;" class="btn btn-primary"
+                    <a
+                      routerLink="/to-do/todo-detail/view"
+                      onClick="return false;"
+                      class="btn btn-primary"
                       >Detail</a
                     >
                   </td>
@@ -92,19 +137,6 @@
                   <td>2017-01-11</td>
                   <td>
                     <div class="badge badge-danger">Not Active</div>
-                  </td>
-                  <td>
-                    <a href="#" onClick="return false;" class="btn btn-primary"
-                      >Detail</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Rizal Fakhri</td>
-                  <td>2017-01-11</td>
-                  <td>
-                    <div class="badge badge-success">Active</div>
                   </td>
                   <td>
                     <a href="#" onClick="return false;" class="btn btn-primary"

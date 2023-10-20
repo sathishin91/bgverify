@@ -10,9 +10,10 @@ import { NgbProgressbarModule } from '@ng-bootstrap/ng-bootstrap';
 import { DetailTodoComponent } from './detail-todo/detail-todo.component';
 import { NgxGaugeModule } from 'ngx-gauge';
 import { ClientDetailTodoComponent } from './client-detail-todo/client-detail-todo.component';
+import { ViewClientTodoComponent } from './view-client-todo/view-client-todo.component';
 
 @NgModule({
-  declarations: [ToDoComponent, DetailTodoComponent, ClientDetailTodoComponent],
+  declarations: [ToDoComponent, DetailTodoComponent, ClientDetailTodoComponent, ViewClientTodoComponent],
   imports: [
     CommonModule,
     NgApexchartsModule,

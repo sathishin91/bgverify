@@ -1,49 +1,188 @@
 <section class="main-content">
   <ul class="breadcrumb breadcrumb-style">
     <li class="breadcrumb-item">
-      <h5 class="page-title m-b-0">
-        <a routerLink="">Delete Check</a>
-      </h5>
+      <h5 class="page-title m-b-0">Deleete Checks</h5>
     </li>
     <li class="breadcrumb-item bcrumb-1">
       <a routerLink="/dashboard/main"> <i class="fas fa-home font-17"></i></a>
     </li>
+    <li class="breadcrumb-item">Detailed view</li>
   </ul>
   <div class="section-body">
-    <div class="row clearfix">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="card">
-          <div class="p-10">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="row m-0">
-                  <div class="col-auto p-0">
-                    <div class="ngxTableHeader">
-                      <div class="table-title">
-                        <h2><strong>Clients</strong></h2>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-8 p-0">
-                    <div class="ngxTableHeader">
-                      <form class="form-inline me-auto">
-                        <div class="search-element d-flex">
-                          <input
-                            class="form-control"
-                            type="search"
-                            placeholder="search"
-                            aria-label="Search"
-                            data-width="200"
-                          />
-                          <button class="btn" type="submit">
-                            <i class="fas fa-search"></i>
-                          </button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
+    <div class="row mb-3">
+      <div class="col-md-4">
+        <form>
+          <div class="form-group">
+            <label>Search Employee</label>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label=""
+              />
+              <div class="input-group-append">
+                <button class="btn btn-primary btn-lg" type="button">
+                  Search
+                </button>
               </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Select Clients</label>
+          <select class="form-select form-control">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Search By</label>
+          <select class="form-select form-control">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h4>Who's Online?</h4>
+          </div>
+          <div class="card-body">
+            <ng-scrollbar style="height: 380px" visibility="hover">
+              <ul class="list-unstyled list-unstyled-border">
+                <li class="items-list-compo">
+                  <img
+                    alt="image"
+                    class="msr-3 rounded-circle"
+                    width="50"
+                    src="assets/images/users/user-1.png"
+                  />
+                  <div class="media-body">
+                    <div class="mt-0 mb-1 fw-bold">Cara Stevens</div>
+                    <div class="text-success text-small font-600-bold">
+                      <i class="fas fa-circle"></i> Online
+                    </div>
+                  </div>
+                </li>
+                <li class="items-list-compo">
+                  <img
+                    alt="image"
+                    class="msr-3 rounded-circle"
+                    width="50"
+                    src="assets/images/users/user-2.png"
+                  />
+                  <div class="media-body">
+                    <div class="mt-0 mb-1 fw-bold">Airi Satou</div>
+                    <div class="text-small font-weight-600 text-muted">
+                      <i class="fas fa-circle"></i> Offline
+                    </div>
+                  </div>
+                </li>
+                <li class="items-list-compo">
+                  <img
+                    alt="image"
+                    class="msr-3 rounded-circle"
+                    width="50"
+                    src="assets/images/users/user-3.png"
+                  />
+                  <div class="media-body">
+                    <div class="mt-0 mb-1 fw-bold">Ashton Cox</div>
+                    <div class="text-small font-weight-600 text-success">
+                      <i class="fas fa-circle"></i> Online
+                    </div>
+                  </div>
+                </li>
+                <li class="items-list-compo">
+                  <img
+                    alt="image"
+                    class="msr-3 rounded-circle"
+                    width="50"
+                    src="assets/images/users/user-4.png"
+                  />
+                  <div class="media-body">
+                    <div class="mt-0 mb-1 fw-bold">Cara Stevens</div>
+                    <div class="text-small font-weight-600 text-success">
+                      <i class="fas fa-circle"></i> Online
+                    </div>
+                  </div>
+                </li>
+                <li class="items-list-compo">
+                  <img
+                    alt="image"
+                    class="msr-3 rounded-circle"
+                    width="50"
+                    src="assets/images/users/user-5.png"
+                  />
+                  <div class="media-body">
+                    <div class="mt-0 mb-1 fw-bold">Angelica Ramos</div>
+                    <div class="text-small font-weight-600 text-success">
+                      <i class="fas fa-circle"></i> Online
+                    </div>
+                  </div>
+                </li>
+                <li class="items-list-compo">
+                  <img
+                    alt="image"
+                    class="msr-3 rounded-circle"
+                    width="50"
+                    src="assets/images/users/user-6.png"
+                  />
+                  <div class="media-body">
+                    <div class="mt-0 mb-1 fw-bold">John Dio</div>
+                    <div class="text-small font-weight-600 text-success">
+                      <i class="fas fa-circle"></i> Online
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </ng-scrollbar>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-8">
+        <div>
+          <div class="card">
+            <div class="card-header">
+              <h4>Pill Tabs</h4>
+            </div>
+            <div class="card-body">
+              <ul
+                ngbNav
+                #nav6="ngbNav"
+                [(activeId)]="active4"
+                class="nav-pills"
+              >
+                <li [ngbNavItem]="1">
+                  <a ngbNavLink>Tab One</a>
+                  <ng-template ngbNavContent>
+                    <p>{{ content1 }}</p>
+                  </ng-template>
+                </li>
+                <li [ngbNavItem]="2">
+                  <a ngbNavLink>Tab Two</a>
+                  <ng-template ngbNavContent>
+                    <p>{{ content2 }}</p>
+                  </ng-template>
+                </li>
+                <li [ngbNavItem]="3">
+                  <a ngbNavLink>Tab Three</a>
+                  <ng-template ngbNavContent>
+                    <p>{{ content3 }}</p>
+                  </ng-template>
+                </li>
+              </ul>
+
+              <div [ngbNavOutlet]="nav6" class="mt-2"></div>
             </div>
           </div>
         </div>

@@ -6,6 +6,7 @@ import { ViewClientTodoComponent } from './view-client-todo/view-client-todo.com
 
 const routes: Routes = [
   { path: '', component: ToDoComponent },
+
   { path: 'todo-detail', component: DetailTodoComponent },
   { path: 'todo-detail/view', component: ViewClientTodoComponent },
 ];

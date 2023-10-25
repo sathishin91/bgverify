@@ -7,6 +7,7 @@ import { NgbNavChangeEvent } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./delete-checks.component.scss'],
 })
 export class DeleteChecksComponent {
+  viewEmployees = false;
   active: any;
   active2 = 'top';
   active3!: number;
@@ -43,5 +44,10 @@ export class DeleteChecksComponent {
     if (this.disabled) {
       this.active3 = 1;
     }
+  }
+
+  viewEmployee() {
+    console.log('View the employee to delete');
+    this.viewEmployees = true;
   }
 }

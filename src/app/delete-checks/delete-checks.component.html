@@ -55,12 +55,12 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="card">
           <div class="card-header">
-            <h4>Who's Online?</h4>
+            <h4>Employees list</h4>
           </div>
           <div class="card-body">
             <ng-scrollbar style="height: 380px" visibility="hover">
               <ul class="list-unstyled list-unstyled-border">
-                <li class="items-list-compo">
+                <li class="items-list-compo" (click)="viewEmployee()">
                   <img
                     alt="image"
                     class="msr-3 rounded-circle"
@@ -149,7 +149,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-lg-8">
+      <div class="col-12 col-sm-6 col-lg-8" *ngIf="viewEmployees === true">
         <div>
           <div class="card">
             <div class="card-header">

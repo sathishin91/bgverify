@@ -3,6 +3,7 @@ import { MainLayoutComponent } from './layout/app-layout/main-layout/main-layout
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthGuard } from './core/guard/auth.guard';
+import { ProfileComponent } from './pages/profile/profile.component';
 const routes: Routes = [
   {
     path: '',
@@ -30,6 +31,7 @@ const routes: Routes = [
         loadChildren: () =>
           import('./to-do/to-do.module').then((m) => m.ToDoModule),
       },
+      { path: 'profile', component: ProfileComponent },
     ],
   },
 

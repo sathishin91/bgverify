@@ -1,7 +1,7 @@
 import { RouteInfo } from './sidebar.metadata';
 export const ROUTES: RouteInfo[] = [
   // {
-  //   path: '/dashboard/main',
+  //   path: '/all-clients',
   //   title: 'MENUITEMS.HOME.LIST.DASHBOARD1',
   //   iconType: 'feather',
   //   icon: 'trello',

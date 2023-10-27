@@ -1,7 +1,9 @@
 <section class="main-content">
   <ul class="breadcrumb breadcrumb-style">
     <li class="breadcrumb-item">
-      <h5 class="page-title m-b-0">Client Name</h5>
+      <h5 class="page-title m-b-0">
+        <a routerLink="/all-clients/client">Client Name</a>
+      </h5>
     </li>
     <li class="breadcrumb-item bcrumb-1">
       <a routerLink="/all-clients"> <i class="fas fa-home font-17"></i></a>
@@ -10,14 +12,17 @@
   </ul>
   <div class="section-body">
     <div class="row">
-      <div class="col-12 col-md-8 col-lg-8">
+      <div class="col-12 col-md-10 col-lg-10">
         <div class="card">
           <div class="card-header">
             <h4>Verification</h4>
           </div>
           <div class="card-body">
             <div class="table-responsive">
-              <table class="table table-bordered table-md">
+              <table
+                class="table table-bordered table-md"
+                *ngIf="mappingService === false && tatMappingServices === false"
+              >
                 <tr>
                   <th>Verification</th>
                   <th>Select</th>
@@ -25,7 +30,7 @@
                   <th>Permission</th>
                   <th>Expiry Days</th>
                 </tr>
-                <tr>
+                <tr (click)="openMappingServices()">
                   <td>
                     <img
                       class="card_img"
@@ -41,15 +46,14 @@
                           id="gridCheck"
                         />
                         <label class="form-check-label" for="gridCheck">
-                          Check me out
                         </label>
                       </div>
                     </div>
                   </td>
                   <td>
-                    <div class="form-group">
+                    <div class="form-group mb-0">
                       <div class="col-sm-9">
-                        <div class="form-group">
+                        <div class="form-group mb-0">
                           <div class="form-check form-check-inline">
                             <input
                               class="form-check-input"
@@ -59,7 +63,7 @@
                               checked
                             />
                             <label class="form-check-label" for="rb1">
-                              First Radio
+                              Yes
                             </label>
                           </div>
                           <div class="form-check form-check-inline">
@@ -70,7 +74,7 @@
                               id="rb2"
                             />
                             <label class="form-check-label" for="rb2">
-                              Second Radio
+                              No
                             </label>
                           </div>
                         </div>
@@ -78,37 +82,103 @@
                     </div>
                   </td>
 
-                  <td>365</td>
+                  <td>
+                    <div class="form-group">
+                      <input type="text" class="form-control" valur="355" />
+                    </div>
+                  </td>
                 </tr>
+              </table>
+              <table
+                class="table table-bordered table-md"
+                *ngIf="mappingService === true"
+              >
                 <tr>
+                  <th>Verification</th>
+                  <th>All Tags</th>
+
+                  <th>Include Tags</th>
+                  <th>Exclude Tags</th>
+                </tr>
+                <tr (click)="openTatMappingServices()">
                   <td>
                     <img
                       class="card_img"
                       src="../../../../assets/images/image-64.png"
-                    />Driving License
+                    />Pan Card
                   </td>
-                  <td>Hasan Basri</td>
-                  <td>2017-01-09</td>
+                  <td>
+                    <div class="form-group mb-0">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="gridCheck"
+                        />
+                        <label class="form-check-label" for="gridCheck">
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group mb-0">
+                      <div class="col-sm-9">
+                        <div class="form-group mb-0">
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="rbbuttons"
+                              id="rb1"
+                              checked
+                            />
+                            <label class="form-check-label" for="rb1">
+                              Yes
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="rbbuttons"
+                              id="rb2"
+                            />
+                            <label class="form-check-label" for="rb2">
+                              No
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <span>-</span>
+                  </td>
                 </tr>
+              </table>
+              <table
+                class="table table-bordered table-md"
+                *ngIf="tatMappingServices === true"
+              >
                 <tr>
+                  <th>Verification</th>
+                  <th>Turn arround time(TAT)</th>
+                </tr>
+                <tr (click)="openBetterPlaceSpocServices()">
                   <td>
                     <img
                       class="card_img"
                       src="../../../../assets/images/image-64.png"
-                    />Aadhar card
+                    />Pan Card
                   </td>
-                  <td>Kusnadi</td>
-                  <td>2017-01-11</td>
-                </tr>
-                <tr>
                   <td>
-                    <img
-                      class="card_img"
-                      src="../../../../assets/images/image-64.png"
-                    />Voter ID
+                    <div class="form-group mb-0">
+                      <div class="form-group">
+                        <input type="text" class="form-control" valur="355" />
+                      </div>
+                    </div>
                   </td>
-                  <td>Rizal Fakhri</td>
-                  <td>2017-01-11</td>
                 </tr>
               </table>
             </div>
